@@ -60,5 +60,3 @@ if (word.toLowerCase() === reversedWord.toLowerCase()) {
 } else {
     console.log(`Sorry, is not palindrome.`)
 }
-
-console.log(reversedWord);
