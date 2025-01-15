@@ -15,7 +15,7 @@ if (hacker1.length > hacker2.length) {
 let nameSpacedNameDriver = '';
 // Iteration 3: Loops
 for (let i = hacker2.length - 1; i >= 0; i--) {
-    nameSpacedNameDriver += hacker1[i];
+    nameSpacedNameDriver += hacker2[i];
     nameSpacedNameDriver += ' ';
 }
 
