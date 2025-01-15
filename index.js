@@ -12,11 +12,11 @@ if (hacker1.length > hacker2.length) {
     console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`);
 }
 
-let nameSpacedNameDriver = '';
+let nameSpacedNameNavigator = '';
 // Iteration 3: Loops
 for (let i = hacker2.length - 1; i >= 0; i--) {
-    nameSpacedNameDriver += hacker2[i];
-    nameSpacedNameDriver += ' ';
+    nameSpacedNameNavigator += hacker2[i];
+    nameSpacedNameNavigator += ' ';
 }
 
 console.log('Driver name separated by space -reversed-: ', nameSpacedNameDriver);
