@@ -14,12 +14,12 @@ if (hacker1.length > hacker2.length) {
 
 let nameSpacedNameDriver = '';
 // Iteration 3: Loops
-for (let i = 0; i < hacker1.length; i++) {
+for (let i = hacker2.length; i > 0; i--) {
     nameSpacedNameDriver += hacker1[i];
     nameSpacedNameDriver += ' ';
 }
 
-console.log('Driver name separated by space: ', nameSpacedNameDriver);
+console.log('Driver name separated by space -reversed-: ', nameSpacedNameDriver);
 
 /*******************************
  * ******* BONUS ZONE ****** */
