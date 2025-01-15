@@ -12,14 +12,45 @@ if (hacker1.length > hacker2.length) {
     console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`);
 }
 
-let nameSpacedNameNavigator = '';
 // Iteration 3: Loops
+/**
+ *3.1 Print the characters of the driver's name, separated by space, and in capital letters, i.e., "J O H N".
+
+3.2 Print all the characters of the navigator's name in reverse order, i.e., "nhoJ".
+
+3.3 Depending on the lexicographic order of the strings, print:
+
+    The driver's name goes first.
+    Yo, the navigator goes first, definitely.
+    What?! You both have the same name?
+
+ */
+
+// 3.1
+let nameSpacedNameDriver = '';
+for (let i = 0; i < hacker1.length; i++) {
+    nameSpacedNameDriver += hacker1[i].toUpperCase();
+    nameSpacedNameDriver += ' ';
+}
+console.log('Driver name in capital letters: ', nameSpacedNameDriver);
+
+// 3.2
+let nameSpacedNameNavigator = '';
 for (let i = hacker2.length - 1; i >= 0; i--) {
     nameSpacedNameNavigator += hacker2[i];
-    nameSpacedNameNavigator += ' ';
 }
+console.log('Navigator name separated by space -reversed-: ', nameSpacedNameNavigator);
 
-console.log('Driver name separated by space -reversed-: ', nameSpacedNameDriver);
+let arrayJobs = [hacker1, hacker2];
+let sortNameJobs = arrayJobs.sort((a, b) => a.localeCompare(b));
+
+if (hacker1 === hacker2) {
+    console.log('What?! You both have the same name?')
+} else if (sortNameJobs[0] > sortNameJobs[1]) {
+    console.log(`The driver's name goes first.`);
+} else {
+    console.log(`Yo, the navigator goes first, definitely.`)
+}
 
 /*******************************
  * ******* BONUS ZONE ****** */
